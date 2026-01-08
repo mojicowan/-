@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 - 我的个人博客</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Microsoft Yahei", sans-serif; }
+        header { background-color: #2c3e50; padding: 1rem 5%; position: sticky; top: 0; z-index: 100; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .logo { color: #fff; font-size: 1.5rem; font-weight: bold; text-decoration: none; }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { color: #ecf0f1; text-decoration: none; transition: color 0.3s; }
+        .nav-links a:hover { color: #3498db; }
+        .container { padding: 2rem 5%; max-width: 800px; margin: 0 auto; }
+        .about-card { background: #fff; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); padding: 3rem; text-align: center; }
+        .avatar { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 2rem; border: 5px solid #f8f9fa; }
+        .nickname { color: #2c3e50; font-size: 2.2rem; margin-bottom: 1rem; }
+        .intro { color: #34495e; line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem; }
+        .skills { margin-bottom: 2rem; }
+        .skills-title { color: #2c3e50; font-size: 1.5rem; margin-bottom: 1rem; }
+        .skills-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+        .skill-tag { background-color: #3498db; color: #fff; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; }
+        .contact { margin-bottom: 1rem; }
+        .contact-title { color: #2c3e50; font-size: 1.5rem; margin-bottom: 1rem; }
+        .contact-list { list-style: none; display: flex; justify-content: center; gap: 2rem; }
+        .contact-list a { color: #3498db; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; }
+        footer { background-color: #2c3e50; color: #ecf0f1; text-align: center; padding: 2rem 0; margin-top: 2rem; }
+        @media (max-width: 768px) { .nav-links { gap: 1rem; } .about-card { padding: 2rem; } .contact-list { flex-direction: column; gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="/导航栏.html" class="logo">我的博客</a >
+            <nav class="nav-links">
+                <a href="./index.html">首页</a >
+                <a href="./博客文章详情页.html">文章</a >
+                <a href="./分类页.html">分类</a >
+                <a href="./关于我页面.html">关于我</a >
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="about-card">
+             img src="https://via.placeholder.com/150" alt="博主头像" class="avatar">
+            <h1 class="nickname">编程与生活的记录者</h1>
+            <p class="intro">
+                大家好！我是一名在校大学生，主修计算机科学与技术专业。
+                热爱前端开发，喜欢用代码构建美观且实用的网页。
+                同时，我也热衷于记录生活中的点滴，分享学习经验和成长感悟。
+                开这个博客的初衷，是希望能和更多志同道合的朋友交流，
+                一起在编程和生活的道路上共同进步。
+            </p >
+            <div class="skills">
+                <h2 class="skills-title">我的技能栈</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Markdown</span>
+                </div>
+            </div>
+            <div class="contact">
+                <h2 class="contact-title">联系我</h2>
+                <ul class="contact-list">
+                    <li><a href="#">GitHub</a ></li>
+                    <li><a href="#">邮箱</a ></li>
+                    <li><a href="#">知乎</a ></li>
+                    <li><a href="#">微信</a ></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 我的个人博客 | 保留所有权利</p >
+    </footer>
+</body>
+</html>
